@@ -1,4 +1,4 @@
-npx tailwindcss init -pconst App = () => {
+const App = () => {
   return <div>App</div>;
 };
 
