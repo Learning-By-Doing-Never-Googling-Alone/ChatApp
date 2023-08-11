@@ -12,7 +12,7 @@ import {
  * @component
  */
 
-export default function Landing() {
+const Landing = () => {
   return (
     <div>
       {/* Header Section */}
@@ -76,4 +76,6 @@ export default function Landing() {
       <Footer />
     </div>
   );
-}
+};
+
+export default Landing;

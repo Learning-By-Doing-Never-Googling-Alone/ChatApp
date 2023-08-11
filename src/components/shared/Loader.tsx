@@ -41,7 +41,7 @@ const Loader = () => {
    */
   return (
     <div className="fixed inset-0 flex items-center justify-center z-50 bg-white">
-      <span className="loading loading-infinity loading-lg text-primary"></span>
+      <span className="loading loading-infinity loading-lg text-purple-800"></span>
     </div>
   );
 };
