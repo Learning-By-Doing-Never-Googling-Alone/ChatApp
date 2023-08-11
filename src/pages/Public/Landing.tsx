@@ -2,6 +2,7 @@ import {
   Feature,
   FeatureImage,
   FeatureText,
+  Footer,
   Hero,
   Navbar,
 } from "../../components";
@@ -15,7 +16,7 @@ export default function Landing() {
   return (
     <div>
       {/* Header Section */}
-      <div className="bg-[url(https://i.ibb.co/Tvn7DbX/Backsplash.png)] bg-cover ">
+      <div className="bg-[url(https://i.ibb.co/Tvn7DbX/Backsplash.png)] bg-cover bg-top ">
         {/* Navigation Bar */}
         <Navbar />
 
@@ -72,6 +73,7 @@ export default function Landing() {
           </Feature>
         </div>
       </main>
+      <Footer />
     </div>
   );
 }

@@ -2,6 +2,11 @@ type FeatureProps = {
   children: React.ReactNode;
 };
 
+/**
+ * Feature component for displaying a layout with two columns, commonly used for feature sections.
+ * @component
+ * @param {FeatureProps} props - Component properties.
+ */
 const Feature = ({ children }: FeatureProps) => {
   return (
     <div className="mt-24">
@@ -11,5 +16,11 @@ const Feature = ({ children }: FeatureProps) => {
     </div>
   );
 };
+
+/**
+ * Properties for the Feature component.
+ * @typedef {Object} FeatureProps
+ * @property {React.ReactNode} children - The child elements to be rendered within the feature columns.
+ */
 
 export default Feature;
