@@ -8,7 +8,7 @@ import Router from "./router/Router";
 import { useLoading } from "./hooks/useLoader";
 
 // Import Loader
-// import { Loader } from "./components";
+import Loader from "./components/shared/Loader";
 
 /**
  * The main App component that serves as the entry point for the React application.
@@ -24,7 +24,7 @@ function App() {
   return (
     <>
       {/* Display the `Loader` component when `loading` is `true` */}
-      {/* {loading && <Loader />}  */}
+      {loading && <Loader />}
 
       {/* Provide routing capabilities using `RouterProvider` */}
       <RouterProvider router={Router} />
