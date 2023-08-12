@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { Button } from "..";
 
 /**
  * Hero component for the landing page, showcasing the main title, description, and call-to-action button.
@@ -26,11 +27,10 @@ const Hero = () => {
           <div className="mx-auto mt-10 max-w-sm sm:flex sm:max-w-none sm:justify-center">
             <div className="space-y-4 sm:mx-auto ">
               {/* Button Link */}
-              <Link
-                to="/signUp"
-                className="flex items-center justify-center rounded-md border border-transparent bg-black  px-4 py-3 text-base font-medium text-white shadow-sm hover:bg-opacity-70 sm:px-8"
-              >
-                Open Discord in your browser
+              <Link to="/signUp">
+                <Button variant="solid" color="slate">
+                  Open Discord in your browser
+                </Button>
               </Link>
             </div>
           </div>
