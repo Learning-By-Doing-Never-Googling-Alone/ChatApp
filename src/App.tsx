@@ -23,6 +23,9 @@ import { useEffect } from "react";
 function App() {
   // Access the loading state from the LoaderContext using the `useLoading` hook
   const { loading } = useLoading();
+
+  // TODO: Remove when backend is implemented
+  // Initialize the Server
   useEffect(() => {
     Server();
   }, []);
