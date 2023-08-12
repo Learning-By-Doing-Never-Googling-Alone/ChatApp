@@ -12,12 +12,11 @@ const Dashboard = () => {
             <img
               className="h-8 w-auto"
               src="https://i.ibb.co/V9KPjS7/discord-mark-white.png"
-              alt="Your Company"
+              alt="Logo"
             />
           </div>
         </div>
       </div>
-
       {/* Main Content Area */}
       <main className="flex flex-1 overflow-hidden">
         {/* Primary column */}

@@ -10,16 +10,22 @@ import { useLoading } from "./hooks/useLoader";
 // Import Loader
 import Loader from "./components/shared/Loader";
 
+import { Server } from "./Server";
+import { useEffect } from "react";
+
 /**
  * The main App component that serves as the entry point for the React application.
  * It provides routing capabilities using `RouterProvider` from `react-router-dom`.
  * Additionally, it displays a `Loader` component when the `loading` state is `true`.
  * @returns TSX to render the application.
  */
+
 function App() {
   // Access the loading state from the LoaderContext using the `useLoading` hook
   const { loading } = useLoading();
-
+  useEffect(() => {
+    Server();
+  }, []);
   // Render the application
   return (
     <>

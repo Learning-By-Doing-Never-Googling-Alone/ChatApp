@@ -1,33 +1,13 @@
 import { Link } from "react-router-dom";
+import useServers from "../../hooks/useServers";
 
 /**
  * Sidebar component that displays navigation links and icons.
  * @component
  */
 const Sidebar = () => {
-  // Array of navigation items with names, hrefs, and icons
-  const navigation = [
-    {
-      name: "server-1",
-      href: "#",
-      icon: "https://i.ibb.co/h8C6k3R/Server-2.png",
-    },
-    {
-      name: "server-2",
-      href: "#",
-      icon: "https://i.ibb.co/T23mfB5/Server-1.png",
-    },
-    {
-      name: "server-3",
-      href: "#",
-      icon: "https://i.ibb.co/6ZMPFcH/Server.png",
-    },
-    {
-      name: "server-4",
-      href: "#",
-      icon: "https://i.ibb.co/mFLFR9Q/Server-Icon-1.png",
-    },
-  ];
+  // Hook to receive Servers
+  const { servers } = useServers();
 
   return (
     <div className="hidden lg:flex lg:flex-shrink-0">
@@ -47,16 +27,17 @@ const Sidebar = () => {
               aria-label="Sidebar"
               className="flex flex-col items-center space-y-3 py-6"
             >
-              {navigation.map((item) => (
-                <Link
-                  key={item.name}
-                  to={item.href}
-                  className="flex items-center rounded-lg"
-                >
-                  <img className="w-12 h-12 object-cover" src={item.icon} />
-                  <span className="sr-only">{item.name}</span>
-                </Link>
-              ))}
+              {servers &&
+                servers.map((server) => (
+                  <Link
+                    key={server.name}
+                    to="/dashboard"
+                    className="flex items-center rounded-lg"
+                  >
+                    <img className="w-12 h-12 object-cover" src={server.icon} />
+                    <span className="sr-only">{server.name}</span>
+                  </Link>
+                ))}
             </nav>
 
             {/* Add Server Button */}

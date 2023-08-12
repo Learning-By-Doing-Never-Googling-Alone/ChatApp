@@ -4,7 +4,7 @@ import { Sidebar } from "../components";
 const Layout = () => {
   return (
     <>
-      {/* Main layout container with sidebar, topbar, secondary column, and bottom bar */}
+      {/* Main layout container with sidebar and secondary column */}
       <div className="flex h-full">
         {/* Sidebar */}
         <Sidebar />
