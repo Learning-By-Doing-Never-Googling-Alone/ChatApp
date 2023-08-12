@@ -1,30 +1,15 @@
-import { Outlet, useNavigate } from "react-router-dom";
-import {
-  Sidebar,
-  Topbar,
-  MobileBottomBar,
-  DesktopSecondaryColumn,
-} from "../components";
+import { Outlet } from "react-router-dom";
+import { Sidebar } from "../components";
 
 const Layout = () => {
   return (
     <>
-      {/* Main layout container with sidebar, topbar, secondary column, and bottom bar */}
-      <div className="flex h-full bg-seconday-shade">
+      {/* Main layout container with sidebar and secondary column */}
+      <div className="flex h-full">
         {/* Sidebar */}
         <Sidebar />
-        <div className="flex flex-1 flex-col overflow-hidden">
-          {/* Topbar */}
-          <Topbar />
-          {/* Main content area */}
-          <div className="flex flex-1 items-stretch overflow-hidden">
-            {/* Render nested routes within the main content area */}
-            <Outlet />
-            {/* Secondary column (visible on desktop) */}
-            <DesktopSecondaryColumn />
-          </div>
-          {/* Mobile bottom bar */}
-          <MobileBottomBar />
+        <div className="flex min-w-0 flex-1 flex-col overflow-hidden">
+          <Outlet />
         </div>
       </div>
     </>

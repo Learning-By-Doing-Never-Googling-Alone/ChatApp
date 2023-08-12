@@ -4,6 +4,7 @@ import SignUp from "../pages/Public/SignUp";
 import SignIn from "../pages/Public/SignIn";
 import Dashboard from "../pages/Private/Dashboard";
 import Error from "../pages/Misc/Error";
+import Layout from "./Layout";
 
 const Router = createBrowserRouter([
   {
@@ -21,8 +22,14 @@ const Router = createBrowserRouter([
   },
   {
     path: "/dashboard",
-    element: <Dashboard />,
+    element: <Layout />,
     errorElement: <Error />,
+    children: [
+      {
+        path: "/dashboard",
+        element: <Dashboard />,
+      },
+    ],
   },
 ]);
 
