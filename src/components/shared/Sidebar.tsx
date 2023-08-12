@@ -50,7 +50,7 @@ const Sidebar = () => {
               {navigation.map((item) => (
                 <Link
                   key={item.name}
-                  href={item.href}
+                  to={item.href}
                   className="flex items-center rounded-lg"
                 >
                   <img className="w-12 h-12 object-cover" src={item.icon} />
