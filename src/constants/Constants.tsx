@@ -1,6 +1,4 @@
-import { PiFacebookLogoBold } from "react-icons/pi";
-import { AiOutlineInstagram, AiOutlineGithub } from "react-icons/ai";
-import { SlSocialTwitter } from "react-icons/sl";
+import { BsFacebook, BsInstagram, BsTwitter, BsGithub } from "react-icons/bs";
 
 // ICONS/LINKS FOR FOOTER
 
@@ -9,22 +7,22 @@ export const footerLinks = {
     {
       name: "Facebook",
       href: "#",
-      icon: <PiFacebookLogoBold className="h-6 w-6" />,
+      icon: <BsFacebook className="h-6 w-6" />,
     },
     {
       name: "Instagram",
       href: "#",
-      icon: <AiOutlineInstagram className="h-6 w-6" />,
+      icon: <BsInstagram className="h-6 w-6" />,
     },
     {
       name: "Twitter",
       href: "#",
-      icon: <SlSocialTwitter className="h-6 w-6" />,
+      icon: <BsTwitter className="h-6 w-6" />,
     },
     {
       name: "GitHub",
       href: "#",
-      icon: <AiOutlineGithub className="h-6 w-6" />,
+      icon: <BsGithub className="h-6 w-6" />,
     },
   ],
 };
