@@ -9,3 +9,4 @@ export { default as Input } from "./Authentication/shared/Input";
 export { default as RememberMe } from "./Authentication/shared/RememberMe";
 export { default as Button } from "./shared/Button";
 export { default as Logo } from "./shared/Logo";
+export { default as SocialSignInButton } from "./Authentication/SignIn/SocialSignInButton";
