@@ -5,6 +5,9 @@ export default {
     extend: {
       colors: {
         primary: "#5865F2",
+        "raisin-black": "#202225",
+        "dark-charcoal": "#2F3136",
+        green: "#3BA55D",
       },
       fontFamily: {
         "passion-one": ['"Passion One"', "cursive"],
