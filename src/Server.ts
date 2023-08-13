@@ -2,7 +2,7 @@ import { createServer } from "miragejs";
 import Server1 from './assets/images/Server-1.png';
 import Server2 from './assets/images/Server-2.png';
 import ServerIcon1 from './assets/images/Server-Icon-1.png';
-import Server3 from './assets/images/Server.png';
+import ServerIcon from './assets/images/Server.png';
 
 export const Server = () => {
   createServer({
@@ -23,7 +23,7 @@ export const Server = () => {
               },
               {
                 name: "server-3",
-                icon: {Server3},
+                icon: {ServerIcon},
               },
               {
                 name: "server-4",
