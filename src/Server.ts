@@ -1,4 +1,8 @@
 import { createServer } from "miragejs";
+import Server1 from './assets/images/Server-1.png';
+import Server2 from './assets/images/Server-2.png';
+import ServerIcon1 from './assets/images/Server-Icon-1.png';
+import ServerIcon from './assets/images/Server.png';
 
 export const Server = () => {
   createServer({
@@ -11,19 +15,19 @@ export const Server = () => {
             navigation: [
               {
                 name: "server-1",
-                icon: "https://i.ibb.co/h8C6k3R/Server-2.png",
+                icon: {Server2},
               },
               {
                 name: "server-2",
-                icon: "https://i.ibb.co/T23mfB5/Server-1.png",
+                icon: {Server1},
               },
               {
                 name: "server-3",
-                icon: "https://i.ibb.co/6ZMPFcH/Server.png",
+                icon: {ServerIcon},
               },
               {
                 name: "server-4",
-                icon: "https://i.ibb.co/mFLFR9Q/Server-Icon-1.png",
+                icon: {ServerIcon1},
               },
             ],
           };

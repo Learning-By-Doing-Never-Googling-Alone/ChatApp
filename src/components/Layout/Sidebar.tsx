@@ -5,6 +5,11 @@ import useServers from "../../hooks/useServers";
  * Sidebar component that displays navigation links and icons.
  * @component
  */
+
+import Image1 from '../../assets/images/discord-mark-white.png'
+import Image2 from '../../assets/images/Add-Server.png'
+import Image3 from '../../assets/images/Discovery.png'
+
 const Sidebar = () => {
   // Hook to receive Servers
   const { servers } = useServers();
@@ -18,7 +23,7 @@ const Sidebar = () => {
             <div className="flex items-center justify-center py-4 border-b-dark-charcoal border-b-2">
               <img
                 className="h-8 w-auto"
-                src="https://i.ibb.co/V9KPjS7/discord-mark-white.png"
+                src={Image1}
               />
             </div>
 
@@ -43,13 +48,13 @@ const Sidebar = () => {
             {/* Add Server Button */}
             <img
               className="cursor-pointer"
-              src="https://i.ibb.co/12qq3Ly/Add-Server.png"
+              src={Image2}
             />
 
             {/* Discovery Button */}
             <img
               className="my-4 cursor-pointer"
-              src="https://i.ibb.co/Jq3Ff6s/Discovery.png"
+              src={Image3}
             />
           </div>
         </div>
