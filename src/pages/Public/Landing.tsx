@@ -12,11 +12,15 @@ import {
  * @component
  */
 
+import Logo from '../../assets/images/Darkmode.png'
+import Logo2 from '../../assets/images/Darkmode-1.png'
+
+
 const Landing = () => {
   return (
     <div>
       {/* Header Section */}
-      <div className="bg-[url(https://i.ibb.co/Tvn7DbX/Backsplash.png)] bg-cover bg-top ">
+      <div className="Landing-background-image bg-cover bg-top ">
         {/* Navigation Bar */}
         <Navbar />
 
@@ -42,7 +46,7 @@ const Landing = () => {
             <div className="mt-12 sm:mt-16 lg:col-start-1 lg:mt-0">
               <div className="-ml-48 pr-4 sm:pr-6 md:-ml-16 lg:relative lg:m-0 lg:h-full lg:px-0">
                 <FeatureImage
-                  imageUrl="https://i.ibb.co/89rjKW7/Darkmode.png"
+                  imageUrl={Logo}
                   alignImage="right"
                 />
               </div>
@@ -65,7 +69,7 @@ const Landing = () => {
             <div className="mt-12 sm:mt-16 lg:mt-0">
               <div className="-mr-48 pl-4 sm:pl-6 md:-mr-16 lg:relative lg:m-0 lg:h-full lg:px-0">
                 <FeatureImage
-                  imageUrl="https://i.ibb.co/mDpY6W8/Darkmode-1.png"
+                  imageUrl={Logo2}
                   alignImage="left"
                 />
               </div>

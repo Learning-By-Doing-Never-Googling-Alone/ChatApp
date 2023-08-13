@@ -3,6 +3,8 @@
  * @component
  */
 
+import Logo from '../../assets/images/discord-mark-white.png'
+
 const Dashboard = () => {
   return (
     <>
@@ -11,7 +13,7 @@ const Dashboard = () => {
           <div>
             <img
               className="h-8 w-auto"
-              src="https://i.ibb.co/V9KPjS7/discord-mark-white.png"
+              src={Logo}
               alt="Logo"
             />
           </div>

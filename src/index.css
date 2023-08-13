@@ -31,3 +31,15 @@
 .noscroll {
   overflow: hidden;
 }
+
+.Landing-background-image{
+  background-image: url('./assets/images/Backsplash.png');
+}
+
+.Error-image{
+  background-image: url('./assets/images/Group-2-2.png');
+}
+
+.Image-background{
+  background-image: url('./assets/images/Discovery-Banner.png');
+}

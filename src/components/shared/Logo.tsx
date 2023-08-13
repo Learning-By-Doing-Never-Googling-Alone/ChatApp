@@ -7,6 +7,7 @@
  * @returns {JSX.Element} - The rendered Logo component.
  */
 import React from "react";
+import Logo1 from "../../assets/images/discord-logo-blue.png";
 
 interface LogoProps {
   className: string;
@@ -16,7 +17,7 @@ const Logo: React.FC<LogoProps> = ({ className }: LogoProps): JSX.Element => {
   return (
     <img
       className={className}
-      src="https://i.ibb.co/T2Qy1NQ/discord-logo-blue.png"
+      src={Logo1}
       alt="Application Logo"
     />
   );
