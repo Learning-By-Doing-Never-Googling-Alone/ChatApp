@@ -67,7 +67,7 @@ const Button = ({
     throw new Error(`Invalid color "${color}" for variant "${variant}"`);
   }
 
-  className = classNames(baseStyles[variant], colorStyle, className);
+  className = classNames(baseStyles[variant], colorStyle, className!);
 
   return href ? (
     <Link to={href} className={className} {...props} />
