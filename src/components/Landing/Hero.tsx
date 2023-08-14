@@ -29,7 +29,7 @@ const Hero = () => {
               {/* Button Link */}
               <Link to="/signUp">
                 <Button variant="solid" color="slate">
-                  Open Discord in your browser
+                  Open Discord Clone in your browser
                 </Button>
               </Link>
             </div>

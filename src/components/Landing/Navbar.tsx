@@ -21,7 +21,7 @@ const Navbar = () => {
         {/* Sign Up Button */}
         <Link to="/signIn">
           <Button variant="solid" color="slate">
-            Open Discord
+            Open Discord Clone
           </Button>
         </Link>
       </div>

@@ -56,12 +56,12 @@ const Landing = () => {
           {/* Feature 2 */}
           <Feature>
             <FeatureText
-              title="Interaction with Dynamic Discord Chats"
+              title="Interaction with Dynamic Discord Clone Chats"
               description="Chats Description: Revolutionize your community
-             interactions using our innovative Discord chat feature.
+             interactions using our innovative Discord Clone chat feature.
              Engage in real-time conversations, share multimedia
              content, and collaborate effortlessly. From lively
-             discussions to focused brainstorming, our Discord chat
+             discussions to focused brainstorming, our Discord Clone chat
              brings your community together like never before"
               align="left"
             />
