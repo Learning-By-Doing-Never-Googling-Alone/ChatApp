@@ -23,8 +23,8 @@ const Image = (): JSX.Element => {
   return (
     <div className="relative hidden   flex-1 lg:flex items-center justify-center w-full bg-cover bg-no-repeat bg-right Image-background">
       <div className=" flex flex-col items-center justify-center  h-full w-full bg-black bg-opacity-30 ">
-        <div className="text-white  text-9xl tracking-widest drop-shadow-md font-extrabold font-passion-one">
-          DISCORD
+        <div className="text-white text-center  text-9xl tracking-widest drop-shadow-md font-extrabold font-passion-one">
+          DISCORD CLONE
           <span className="opacity-70">.</span>
         </div>
       </div>
