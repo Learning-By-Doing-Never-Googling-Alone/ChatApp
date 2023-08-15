@@ -28,7 +28,7 @@ To get the project up and running on your local machine, follow these steps:
 
 1. Clone the repository:
    ```bash
-   $ git clone https://github.com/yourusername/discord-clone.git
+   $ git clone https://github.com/yourusername/ChatApp.git
    $ cd chatApp
    ```
 2. Install the dependencies:
