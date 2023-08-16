@@ -29,7 +29,7 @@ To get the project up and running on your local machine, follow these steps:
 1. Clone the repository:
    ```bash
    $ git clone https://github.com/yourusername/ChatApp.git
-   $ cd chatApp
+   $ cd ChatApp
    ```
 2. Install the dependencies:
     ```bash
@@ -39,6 +39,9 @@ To get the project up and running on your local machine, follow these steps:
     ```bash
     $ npm run dev
     ```
+4. Set env variables in .env file
+  Copy .env.example to .env and edit env variables to be yours
+
 ## Usage
 
 After installing and starting the development server, open your web browser and navigate to `http://localhost:5173`. 
